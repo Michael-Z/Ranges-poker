@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>20-40BB</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+            function irPara40BB(){
+                window.location.href = './openraise40bb+.html';
+            }
+            function irPara10a20BB(){
+                window.location.href = './openraise10-20bb.html';
+            }
+            function changeImage(){
+            var QuarentaBB = document.getElementById("QuarentaBB");
+            var selectedBB = QuarentaBB.options[QuarentaBB.selectedIndex].value;
+            
+            var Image = document.getElementById("image");
+            
+            if(selectedBB === 'UTG'){
+                Image.src = './imagens/20-40BB/UTG.png'
+            }
+            if(selectedBB === 'UTG1'){
+                Image.src = './imagens/20-40BB/UTG1.png'
+            }
+            if(selectedBB === 'MP1'){
+                Image.src = './imagens/20-40BB/MP1.png'
+            }
+            if(selectedBB === 'MP2'){
+                Image.src = './imagens/20-40BB/MP2.png'
+            }
+            if(selectedBB === 'HJ'){
+                Image.src = './imagens/20-40BB/HJ.png'
+            }
+            if(selectedBB === 'CO'){
+                Image.src = './imagens/20-40BB/CO.png'
+            }
+            if(selectedBB === 'BTN'){
+                Image.src = './imagens/20-40BB/BTN.png'
+            }
+
+            console.log(Image);
+            console.log(selectedBB)
+            }
+        </script>
+        <style>
+        #QuarentaBB{
+            margin-top:2px;
+            margin-bottom:5px;
+        }
+        </style>
+</head>
+<body>
+    <div class="container">
+            <div class="row">
+            <div class="col-md-2">
+                    <select class="form-control" autocomplete="off" id="QuarentaBB" onchange="changeImage()">
+                            <option value="UTG" selected="selected">UTG</option>
+                            <option value="UTG1">UTG1</option>
+                            <option value="MP1">MP1</option>
+                            <option value="MP2">MP2</option>
+                            <option value="HJ">HJ</option>
+                            <option value="CO">CO</option>
+                            <option value="BTN">BTN</option>
+                    </select>
+            </div>
+            <div class="col-md-2">
+                    <button onclick="irPara40BB()" class="btn">40BB+</button>
+                    <button onclick="irPara10a20BB()" class="btn">10-20BB</button>
+            </div>
+
+            </div>
+            
+        <div class="row">
+            <div class="col-md-6 col-sm-2"><img id="image" src="./imagens/20-40BB/UTG.png" width="400px" height="350px" alt=""></div>
+            <div class="col-md-6 col-sm-2"><img id="desc" src="./imagens/20-40BB/DESCRIÇÃO.png"alt=""></div>
+        </div>
+    </div>
+
+</body>
+</html>
