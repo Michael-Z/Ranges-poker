@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>50BB+</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+            function irPara40a50BB(){
+                window.location.href = './rangedeflat-40a50.html';
+            }
+            function irPara30a40BB(){
+                window.location.href = './rangedeflat-30a40.html';
+            }
+            function irPara20BB(){
+                window.location.href = './rangedeflat-20.html';
+            }
+            function changeImage(){
+            var QuarentaBB = document.getElementById("QuarentaBB");
+            var selectedBB = QuarentaBB.options[QuarentaBB.selectedIndex].value;
+            
+            var Image = document.getElementById("image");
+            
+            if(selectedBB === 'BBxBTN'){
+                Image.src = './imagens/FLATTING/50BB+/BBxBTN.png'
+            }
+            if(selectedBB === 'BBxSB'){
+                Image.src = './imagens/FLATTING/50BB+/BBxSB.png'
+            }
+            if(selectedBB === 'BTNxCO'){
+                Image.src = './imagens/FLATTING/50BB+/BTNxCO.png'
+            }
+            if(selectedBB === 'BTNxMP'){
+                Image.src = './imagens/FLATTING/50BB+/BTNxMP.png'
+            }
+            if(selectedBB === 'BTNxUTG'){
+                Image.src = './imagens/FLATTING/50BB+/BTNxUTG.png'
+            }
+            if(selectedBB === 'COxUTG'){
+                Image.src = './imagens/FLATTING/50BB+/COxUTG.png'
+            }
+            if(selectedBB === 'SBxBTN'){
+                Image.src = './imagens/FLATTING/50BB+/SBxBTN.png'
+            }
+            if(selectedBB === 'SBxCO'){
+                Image.src = './imagens/FLATTING/50BB+/SBxCO.png'
+            }
+            if(selectedBB === 'SBxMP'){
+                Image.src = './imagens/FLATTING/50BB+/SBxMP.png'
+            }
+            if(selectedBB === 'SBXUTG'){
+                Image.src = './imagens/FLATTING/50BB+/SBXUTG.png'
+            }
+            if(selectedBB === 'UTG1xUTG'){
+                Image.src = './imagens/FLATTING/50BB+/UTG1xUTG.png'
+            }
+
+            console.log(Image);
+            console.log(selectedBB)
+            }
+        </script>
+        <style>
+        #QuarentaBB{
+            margin-top:2px;
+            margin-bottom:5px;
+        }
+        </style>
+</head>
+<body>
+    <div class="container">
+            <div class="row">
+            <div class="col-md-2">
+                    <select class="form-control" autocomplete="off" id="QuarentaBB" onchange="changeImage()">
+                            <option value="BBxBTN" selected="selected">BBxBTN</option>
+                            <option value="BBxSB">BBxSB</option>
+                            <option value="BTNxCO">BTNxCO</option>
+                            <option value="BTNxMP">BTNxMP</option>
+                            <option value="BTNxUTG">BTNxUTG</option>
+                            <option value="COxUTG">COxUTG</option>
+                            <option value="MPxUTG">MPxUTG</option>
+                            <option value="SBxBTN">SBxBTN</option>
+                            <option value="SBxCO">SBxCO</option>
+                            <option value="SBxMP">SBxMP</option>
+                            <option value="SBxUTG">SBxUTG</option>
+                            <option value="UTG1xUTG">UTG1xUTG</option>
+                    </select>
+            </div>
+            <div class="col-md-2">
+                    <button onclick="irPara40a50BB()" class="btn">40-50BB</button>
+                    <button onclick="irPara30a40BB()" class="btn">30-40BB</button>
+                    <button onclick="irPara20BB()" class="btn">20BB</button>
+            </div>
+
+            </div>
+            
+        <div class="row">
+            <div class="col-md-6 col-sm-2"><img id="image" src="./imagens/FLATTING/50BB+/BBxBTN.png" width="1000px" height="400px" alt=""></div>
+        </div>
+    </div>
+
+</body>
+</html>
